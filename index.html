@@ -1,0 +1,74 @@
+<html>
+  <head>
+    <title>ЛР: Движение волны</title>
+    <link rel="stylesheet" href="css/ui-lightness/jquery-ui-1.10.4.custom.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="jquery-ui-1.10.4.custom.min.js"></script>
+    <script type="text/javascript" src="circle-waves.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h1>Движение волны</h1>
+          <div class="row">
+            <div class="col-sm-2">
+              <p>
+                Количество элементов
+                <input type="text" id="numCircles" value="500" class="form-control" max-length="4">
+              </p>
+              <p><button id="start" class="btn btn-default btn-danger btn-block">Stop</button></p>
+            </div>
+            <div class="col-sm-10">
+              <br>
+              <div class="row">
+                <div class="col-sm-2">
+                  <p>Эффект замедления <code><span id="speedDisplay">0</span></code></p>
+                </div>
+                <div class="col-sm-10">
+                  <div id="speedSlider" class="slider"></div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-2">
+                  <p>Форма волны <code><span id="offsetDisplay">0</span></code></p>
+                </div>
+                <div class="col-sm-10">
+                  <div id="offsetSlider" class="slider"></div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-2">
+                  <p>Расстояние между элементами <code>-<span id="separationDisplay">0</span></code></p>
+                </div>
+                <div class="col-sm-10">
+                  <div id="separationSlider" class="slider"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+
+          <div id="pool">
+            <div class="circle">
+              <div class="dot"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <hr>
+          <div class="well">
+            Программа, имитирующая движение волны, создана в рамках лабораторной работы по дисциплине <a href="https://edu.stankin.ru/course/view.php?id=10854">Математическое и компьютерное моделирование</a> в декабре 2019 г.
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
